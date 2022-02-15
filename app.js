@@ -3,7 +3,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const dotenv = require('dotenv');
 const _ = require("lodash");
+
+dotenv.config({path : './config.env'});
 
 const app = express();
 
@@ -36,7 +39,6 @@ app.post("/", function(req, res){
   });
 
   item.save();
-  console.log("Successfully added new item.");
   res.redirect('/');
 });
 
@@ -45,7 +47,6 @@ app.post("/delete", (req,res)=>{
   const checkedItemId = req.body.checkbox;
     Item.findByIdAndRemove(checkedItemId, function(err){
       if (!err) {
-        console.log("Successfully deleted checked item.");
         res.redirect("/");
       }
     });
@@ -56,7 +57,8 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
+// const PORT = process.evn.PORT || 3000;
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log("Server has started");
 });
