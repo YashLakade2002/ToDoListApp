@@ -1,0 +1,107 @@
+html {
+  background-color: #E4E9FD;
+  background-image: rgb(146, 146, 207);
+  min-height: 1000px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.box {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgb(198, 205, 212);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color: rgb(124, 124, 221);
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #A683E3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #00204a;
+}
+
+form.item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: rgb(83, 83, 228);
+  color: #fff;
+  font-size: 30px;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 #A683E3;
+}
+
+::placeholder {
+  text-decoration: #00204a;
+  color: rgba(0, 0, 0, 0.698);
+  opacity: 1;
+}
+
+footer {
+  color: rgba(0, 0, 0, 0.822);
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+}
+
+* a{
+  text-decoration: none;
+}
