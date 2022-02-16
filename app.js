@@ -57,8 +57,8 @@ app.get("/about", function(req, res){
   res.render("about");
 });
 
-// const PORT = process.evn.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   console.log("Server has started");
 });
